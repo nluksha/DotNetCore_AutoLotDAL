@@ -19,6 +19,6 @@ namespace DotNetCore_AutoLotDAL.Models
         [StringLength(50)]
         public string PetName { get; set; }
 
-        public virtual List<Order> Orders { get; set; } = new List<Order>();
+        public List<Order> Orders { get; set; } = new List<Order>();
     }
 }

@@ -42,7 +42,7 @@ namespace DotNetCore_AutoLotDAL.EF
             modelBuilder.Entity<Order>()
                 .HasOne(e => e.Car)
                 .WithMany(e => e.Orders)
-                .OnDelete(DeleteBehavior.SetNull);
+                .OnDelete(DeleteBehavior.ClientSetNull);
         }
 
         public string GetTableName(Type type)

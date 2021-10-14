@@ -10,6 +10,10 @@ namespace DotNetCore_AutoLotDAL.Repos
 {
     public class InventoryRepo : BaseRepo<Inventory>, IInventoryRepo
     {
+        public InventoryRepo()
+        {
+        }
+
         public InventoryRepo(AutoLotContext context): base(context)
         {
         }
